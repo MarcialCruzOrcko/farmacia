@@ -1,0 +1,66 @@
+:root {
+    --color-celeste: #87CEEB;
+    --color-celeste-oscuro: #5F9EA0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.bg-primary {
+    background-color: var(--color-celeste) !important;
+}
+
+.btn-primary {
+    background-color: var(--color-celeste);
+    border-color: var(--color-celeste);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-celeste-oscuro);
+    border-color: var(--color-celeste-oscuro);
+}
+
+.hero-section {
+    background-color: var(--color-celeste);
+    color: white;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.social-links a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+}
+
+.social-links a:hover {
+    background-color: var(--color-celeste);
+    color: #fff !important;
+}
+
+@media (max-width: 768px) {
+    .hero-section .row {
+        text-align: center;
+    }
+
+    .hero-section img {
+        margin-top: 20px;
+    }
+}

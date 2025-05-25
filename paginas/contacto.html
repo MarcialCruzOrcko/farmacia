@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Farmacia Luz Celeste</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .contact-info-card {
+            transition: all 0.3s ease;
+            border-left: 4px solid var(--color-celeste);
+        }
+        .contact-info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .map-container {
+            height: 100%;
+            min-height: 300px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .form-control:focus {
+            border-color: var(--color-celeste);
+            box-shadow: 0 0 0 0.25rem rgba(135, 206, 235, 0.25);
+        }
+        .btn-submit {
+            background-color: var(--color-celeste-oscuro);
+            border-color: var(--color-celeste-oscuro);
+        }
+        .btn-submit:hover {
+            background-color: var(--color-celeste);
+            border-color: var(--color-celeste);
+        }
+    </style>
+</head>
+<body>
+<!-- Header -->
+<header class="bg-primary bg-gradient">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/logo.webp" alt="Logo Farmacia Luz Celeste" width="50" height="50" class="d-inline-block align-top">
+                    <span class="ms-2">Farmacia Luz Celeste</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="medicamentos.html">Medicamentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="formulas.html">Fórmulas Magistrales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="vacunas.html">Vacunas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="promociones.html">Promociones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- Contenido principal -->
+<main class="py-5">
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+                    </ol>
+                </nav>
+                <h1 class="mb-4">Contáctanos</h1>
+                <p class="lead">Estamos aquí para ayudarte. Escríbenos o visítanos en nuestra sucursal.</p>
+            </div>
+        </div>
+
+        <!-- Información de contacto -->
+        <div class="row mb-5 g-4">
+            <div class="col-md-4">
+                <div class="card h-100 contact-info-card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-start">
+                            <div class="flex-shrink-0 bg-primary bg-opacity-10 p-3 rounded me-3">
+                                <i class="fas fa-map-marker-alt fa-2x text-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="h5">Dirección</h3>
+                                <p class="mb-0">Av. Principal 1234<br>Potosí, Bolivia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 contact-info-card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-start">
+                            <div class="flex-shrink-0 bg-primary bg-opacity-10 p-3 rounded me-3">
+                                <i class="fas fa-phone-alt fa-2x text-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="h5">Teléfonos</h3>
+                                <p class="mb-1"><strong>Farmacia:</strong> +56 2 2345 6789</p>
+                                <p class="mb-0"><strong>WhatsApp:</strong> +56 9 8765 4321</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 contact-info-card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-start">
+                            <div class="flex-shrink-0 bg-primary bg-opacity-10 p-3 rounded me-3">
+                                <i class="fas fa-envelope fa-2x text-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="h5">Correo Electrónico</h3>
+                                <p class="mb-1"><strong>Consultas:</strong> info@farmacialuzceleste.bo</p>
+                                <p class="mb-0"><strong>Recetas:</strong> recetas@farmacialuzceleste.bo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Horario de atención -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="h4 mb-4">Horario de Atención</h2>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class="table-light">
+                                <tr>
+                                    <th>Día</th>
+                                    <th>Horario</th>
+                                    <th>Servicios</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Lunes a Viernes</td>
+                                    <td>8:30 - 20:00 hrs</td>
+                                    <td>Todos los servicios</td>
+                                </tr>
+                                <tr>
+                                    <td>Sábado</td>
+                                    <td>9:00 - 18:00 hrs</td>
+                                    <td>Todos los servicios</td>
+                                </tr>
+                                <tr>
+                                    <td>Domingo</td>
+                                    <td>10:00 - 14:00 hrs</td>
+                                    <td>Servicio básico y urgencias</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>Feriados</td>
+                                    <td>10:00 - 14:00 hrs</td>
+                                    <td>Servicio básico y urgencias</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="alert alert-info mt-3 mb-0">
+                            <i class="fas fa-info-circle me-2"></i> En horario de cierre, atendemos urgencias farmacéuticas. Llama al +56 9 7654 3210.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mapa y formulario -->
+        <div class="row">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <h2 class="h4 mb-3">Encuéntranos</h2>
+                <div class="map-container bg-light">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3110.486896871756!2d-65.75703952872169!3d-19.583864495792614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDM1JzAxLjkiUyA2NcKwNDUnMjIuNiJX!5e1!3m2!1ses-419!2sbo!4v1747877279015!5m2!1ses-419!2sbo" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <h2 class="h4 mb-3">Escríbenos</h2>
+                <div class="card">
+                    <div class="card-body">
+                        <form id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="nombre" class="form-label">Nombre completo *</label>
+                                    <input type="text" class="form-control" id="nombre" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Correo electrónico *</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="telefono" class="form-label">Teléfono</label>
+                                    <input type="tel" class="form-control" id="telefono">
+                                </div>
+                                <div class="col-12">
+                                    <label for="asunto" class="form-label">Asunto *</label>
+                                    <select class="form-select" id="asunto" required>
+                                        <option value="" selected disabled>Selecciona un asunto</option>
+                                        <option>Consulta general</option>
+                                        <option>Pedido de medicamentos</option>
+                                        <option>Fórmulas magistrales</option>
+                                        <option>Servicio de vacunación</option>
+                                        <option>Sugerencias o reclamos</option>
+                                        <option>Otro</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label for="mensaje" class="form-label">Mensaje *</label>
+                                    <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="privacidad" required>
+                                        <label class="form-check-label" for="privacidad">
+                                            Acepto la <a href="#">política de privacidad</a> *
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-submit">
+                                        <i class="fas fa-paper-plane me-2"></i>Enviar mensaje
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Preguntas frecuentes -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <h2 class="mb-4">Preguntas Frecuentes</h2>
+
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                ¿Cómo puedo saber si tienen un medicamento en stock?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Puedes llamarnos a nuestro número de teléfono (+56 2 2345 6789) o enviarnos un mensaje por WhatsApp (+56 9 8765 4321) para consultar disponibilidad. También puedes visitar nuestra sección de <a href="medicamentos.html">medicamentos</a> para ver los productos que manejamos regularmente.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                ¿Hacen entregas a domicilio?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Sí, realizamos entregas a domicilio en un radio de 10 km alrededor de nuestra farmacia. El costo del envío varía según la distancia y puede ser gratuito para pedidos superiores a $25.000. El tiempo de entrega es normalmente de 1-2 horas en horario laboral.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                ¿Puedo reservar medicamentos por internet?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Actualmente puedes enviarnos tu receta escaneada o fotografiada (legible) al correo recetas@farmacialuzceleste.bo o por WhatsApp, y nosotros la preparamos para que solo pases a retirarla. Para medicamentos sin receta, puedes llamarnos para reservar.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                ¿Aceptan todas las isapres y fonasa?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Sí, trabajamos con todas las isapres y fonasa. Al momento de comprar, no olvides traer tu cédula de identidad y tu carnet de la isapre o fonasa. También puedes consultar el copago de tus medicamentos llamándonos con anticipación.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Farmacia Luz Celeste</h5>
+                <p>Tu bienestar es nuestra prioridad. Más de 20 años cuidando de ti y tu familia.</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Enlaces útiles</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Preguntas frecuentes</a></li>
+                    <li><a href="#" class="text-white">Términos y condiciones</a></li>
+                    <li><a href="#" class="text-white">Política de privacidad</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Síguenos</h5>
+                <div class="social-links">
+                    <a href="#" class="text-white me-2"><i class="fab fa-facebook-f fa-lg"></i></a>
+                    <a href="#" class="text-white me-2"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#" class="text-white me-2"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-whatsapp fa-lg"></i></a>
+                </div>
+                <div class="mt-3">
+                    <p>Descarga nuestra app:</p>
+                    <a href="#" class="btn btn-outline-light btn-sm me-2"><i class="fab fa-google-play"></i> Play Store</a>
+                    <a href="#" class="btn btn-outline-light btn-sm"><i class="fab fa-apple"></i> App Store</a>
+                </div>
+            </div>
+        </div>
+        <hr class="my-4">
+        <div class="text-center">
+            <p class="mb-0">&copy; 2023 Farmacia Luz Celeste. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/script.js"></script>
+<script>
+    // Ejemplo de validación del formulario
+    document.addEventListener('DOMContentLoaded', function() {
+        const contactForm = document.getElementById('contactForm');
+
+        if(contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                // Validación simple (en un caso real sería más completa)
+                const nombre = document.getElementById('nombre').value;
+                const email = document.getElementById('email').value;
+
+                if(nombre && email) {
+                    // Simulación de envío exitoso
+                    alert('Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.');
+                    contactForm.reset();
+                } else {
+                    alert('Por favor completa los campos requeridos.');
+                }
+            });
+        }
+    });
+</script>
+</body>
+</html>

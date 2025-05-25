@@ -1,0 +1,25 @@
+# Ignorar directorios y archivos de configuración de PhpStorm (y otros IDEs de JetBrains)
+.idea/
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos de logs y temporales
+*.log
+*.tmp
+*.bak
+*~
+
+# Ignorar archivos generados por el navegador o extensiones
+*.swp
+*.swo
+
+# Ignorar dependencias de Node.js si las usas (por ejemplo, para SASS/SCSS, Prettier, ESLint)
+node_modules/
+
+# Si generas algún archivo de salida (por ejemplo, CSS compilado desde SASS en una carpeta 'dist')
+/dist/
+/build/
+
+# Archivos de depuración de PhpStorm
+.phpstorm.meta.php
+.phpstorm_helpers/
